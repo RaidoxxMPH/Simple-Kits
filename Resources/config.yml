@@ -1,9 +1,161 @@
-#RAIDOXX 17/maio/2022
+#RAIDOXX Version 1 final (17/mai/2022)
+#RAIDOXX Version 2 final (29/mai/2022)
+#RAIDOXX Version 3 final (30/mai/2022)
+#RAIDOXX Version 4 final (31/mai/2022)
+#slots available [0 to 53]
 
-itens:
-  - 276
-  - 261
-  - 306
-  - 307
-  - 308
-  - 309
+#HOW TO SET UP
+#ICONS GUI
+ #Icons:
+  #"NAME_KIT": #NAME OF KIT
+     #slot: 2 #SLOT IN GUI
+     #item: 1 #ITEM OF GUI
+     #name: "TEST" #NAME OF ITEM
+#Kits:
+  #Mago: #NAME OF KIT
+    #time: 60 #time of cooldown
+    #name: "TEST" #NAME OF ITEM, it has to be the same as the "icons"
+    #Itens:
+      #ID OF ITEM: AMOUNT: NAME: LORE: ENCHANT: LEVEL OF ENCHANT
+      #DEFAULT IS DEFAULT NAME OF ITEM
+      #NO FOR WITHOUT LORE
+
+      #- "1:1:DEFAULT:NO"
+      #- "2:4:TEST:RDX IS THE BEST"
+      #- "276:1:RDX:THE BEST DEV:sharpness:1"
+Windows:
+  SelectKitsWindow:
+    type: 2
+    name: SelectKitsWindow
+  IconsKitsWindow:
+    type: 3
+    name: IconsKitsWindow
+  KitsWindow:
+    type: 3
+    name: KitsWindow
+  BasicKits:
+    type: 2
+    name: BasicKits
+  PreviewItens:
+    type: 3
+    name: PreviewItens
+
+
+SelectKits:
+    "basics":
+        slot: 10
+        item: 5
+        name: "§eKits Basics"
+        lore: "\nClick for open Basic Kits "
+    "vips":
+        slot: 12
+        item: 399
+        name: "§bKits Vips"
+        lore: "\nClick for open Vips Kits"
+    "creates":
+        slot: 14
+        item: 399
+        name: "§aCreates"
+        lore: "\nClick for open Creates"
+    "cash":
+       slot: 16
+       item: 399
+       name: "§5Kits Cash"
+       lore: "\nClick for open Cash Kits"
+
+BasicKits:
+  "§eKIT §aBeginner":
+    slot: 10
+    item: 268
+    name: "§eKIT §aBeginner"
+    lore: "\nClick for see itens"
+    time: 30
+    itens:
+     - "298:1:DEFAULT:\n§eKIT §aBeginner"
+     - "299:1:DEFAULT:\n§eKIT §aBeginner"
+     - "300:1:DEFAULT:\n§eKIT §aBeginner"
+     - "301:1:DEFAULT:\n§eKIT §aBeginner"
+     - "272:1:DEFAULT:\n§eKIT §aBeginner"
+     - "274:1:DEFAULT:\n§eKIT §aBeginner"
+     - "275:1:DEFAULT:\n§eKIT §aBeginner"
+     - "273:1:DEFAULT:\n§eKIT §aBeginner"
+     - "272:1:DEFAULT:\n§eKIT §aBeginner"
+     - "363:16:DEFAULT:\n§eKIT §aBeginner"
+    permission: "kit.beginner"
+  "§aKit Miner":
+    slot: 12
+    item: 285
+    name: "§aKit Miner"
+    lore: "\nClick for see itens"
+    time: 30
+    itens:
+     - "278:1:DEFAULT:\n§eKIT §aMiner"
+     - "314:1:DEFAULT:\n§eKIT §aMiner"
+    permission: "kit.miner"
+  "§aKit Goblin":
+    slot: 14
+    item: 371
+    name: "§aKit Goblin"
+    lore: "\nClick for see itens"
+    time: 30
+    itens:
+      - "283:1:DEFAULT:\n§aKit Goblin:sharpness:2"
+      - "314:1:DEFAULT:\n§aKit Goblin:protection:3"
+      - "315:1:DEFAULT:\n§aKit Goblin:protection:3"
+      - "316:1:DEFAULT:\n§aKit Goblin:protection:3"
+      - "317:1:DEFAULT:\n§aKit Goblin:protection:3"
+      - "322:5:DEFAULT:\n§aKit Goblin"
+      - "363:16:DEFAULT:\n§aKit Goblin"
+    permission: "kit.goblin"
+  "§aKit Farmer":
+    slot: 16
+    item: 296
+    name: "§aKit Farmer"
+    lore: "\nClick for see itens"
+    time: 30
+    itens:
+      - "293:1:DEFAULT:\n§aKit Farmer:unbreaking:3"
+      - "296:16:DEFAULT:\n§aKit Farmer"
+    permission: "kit.farmer"
+
+
+
+
+
+Icons:
+  "mago":
+    slot: 20
+    item: 438
+    name: "§eKIT §5MAGO"
+  "barbaro":
+    slot: 22
+    item: 258
+    name: "§eKIT §6BARBARO"
+  "deus":
+    slot: 24
+    item: 466
+    name: "§eKIT §bDeus"
+
+Kits:
+  Mago:
+   time: 60
+   name: "§eKIT §5MAGO"
+   Itens:
+    - "283:1:Rdx:RAIDOXX"
+    - "350:16:TEST:BLABLABLA"
+    - "262:16:DEFAULT:NO"
+  Barbaro:
+    time: 60
+    name: "§eKIT §6BARBARO"
+    Itens:
+    - "279:1:§eKIT §6BARBARO §rAxe:\n§Axe BARBARO:sharpness:4"
+    - "311:1:§eKIT §6BARBARO §rChestplate:\n§eChestplate BARBARO:protection:3"
+    - "313:1:§eKIT §6BARBARO §rBoots:\n§eBoots BARBARO:protection:3"
+    - "350:16:§eKIT §6BARBARO §rPeixe Frito:NO"
+  Deus:
+    time: 60
+    name: "§eKIT §bDeus"
+    Itens:
+    - "276:1:RDX:THE BEST DEV:sharpness:1"
+    - "350:16:DEFAULT:NO"
+    - "262:16:DEFAULT:NO"
